@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/style.css" %}'>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="dt">Data Collection</h1>
+    <h1>{{all}}</h1>
+    <table border="1" id="info">
+        <tr>
+        <th>Sr.No</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Message</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        </tr>
+
+        {% for x in data %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{x.name}}</td>
+            <td>{{x.email}}</td>
+            <td>{{x.mobile}}</td>
+            <td>{{x.message}}</td>
+            <td id="id_edit"><button><a href="/edit/{{x.id}}">Edit</a></td></button>
+            <td id="id_delete"><button><a href="/delete/{{x.id}}">Delete</a></td></button>
+        </tr>
+      {% endfor %}
+    </table>
+</body>
+</html>

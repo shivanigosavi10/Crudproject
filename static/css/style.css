@@ -1,0 +1,47 @@
+#info {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  #info td, #info th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #info tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #info tr:hover {background-color: #ddd;}
+  
+  #info th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+  }
+  #dt{
+    color: #126848;
+    text-align: center;
+    margin-right: auto;
+    margin-right: auto;
+  }
+  #id_edit button{
+    background-color: #ecea7a;
+    
+    
+    cursor: pointer;
+  }
+  a:link{
+   text-decoration: none;
+}
+
+#id_delete button{
+    background-color: #f53f3c;
+
+   
+    cursor: pointer;
+}
